@@ -59,13 +59,41 @@ class DetailedCharacterCard extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 16, vertical: 12),
-                      child: Text(
-                        "${detailedCharacter.status} - ${detailedCharacter.species} ",
-                        textAlign: TextAlign.start,
-                        style: TextStyle(
-                          color: AppColors.white,
-                          fontSize: 18,
-                        ),
+                      child: Row(
+                        children: <Widget>[
+                          detailedCharacter.status == 'Alive'
+                              ? Container(
+                                  height: 12,
+                                  width: 12,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      border: Border.all(
+                                          color: Colors.white, width: 1),
+                                      color: Colors.green),
+                                )
+                              : Container(
+                                  height: 12,
+                                  width: 12,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                        color: Colors.white, width: 1),
+                                    color: Colors.red,
+                                  ),
+                                ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 16, vertical: 12),
+                            child: Text(
+                              "${detailedCharacter.status} - ${detailedCharacter.species} ",
+                              textAlign: TextAlign.start,
+                              style: TextStyle(
+                                color: AppColors.white,
+                                fontSize: 18,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     Padding(
