@@ -1,4 +1,4 @@
-#Thu Dec 02 17:28:16 BRT 2021
+#Thu Dec 02 17:51:53 BRT 2021
 base.0=/home/thalyta/git/RickAndMortyApp/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

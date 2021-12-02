@@ -34,13 +34,12 @@ class DetailedCharacterCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                  padding: const EdgeInsets.only(top: 0.0),
                   child: Image.network(
                     detailedCharacter.image,
+                    fit: BoxFit.fitWidth,
                     height: 180,
                     width: 330,
-                    fit: BoxFit.fitWidth,
                   ),
                 ),
                 Column(
