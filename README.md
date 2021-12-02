@@ -11,14 +11,12 @@ The Rick And Morty app is an app developed in Flutter that displays characters f
 
 ### Home Page:
  <p align="center">
-  <img src="homepage.png
-  "/>
+  <img src="homepage.png"/>
 </p>
 
 ### Detail Page:
  <p align="center">
-  <img src="detailpage.png
-  "/>
+  <img src="detailpage.png"/>
 </p>
 
 ## ✨ How to use
