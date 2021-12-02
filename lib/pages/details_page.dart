@@ -8,9 +8,12 @@ import 'package:kode_rick_and_morty/models/detailed_character.dart';
 import 'package:kode_rick_and_morty/theme/app_colors.dart';
 
 class DetailsPage extends StatefulWidget {
-  const DetailsPage({required this.characterId, Key? key}) : super(key: key);
+  const DetailsPage(
+      {required this.characterId, Key? key, required this.episodeId})
+      : super(key: key);
 
   final int characterId;
+  final int episodeId;
 
   @override
   _DetailsPageState createState() => _DetailsPageState();
@@ -18,10 +21,12 @@ class DetailsPage extends StatefulWidget {
 
 class _DetailsPageState extends State<DetailsPage> {
   Future<DetailedCharacter>? detailedCharacter;
+  Future<DetailedEpisode>? detailedEpisode;
 
   @override
   initState() {
     detailedCharacter = Repository.getCharacterDetails(widget.characterId);
+    detailedEpisode = Repository.getEpisodeDetails(widget.episodeId);
     super.initState();
   }
 

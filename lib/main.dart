@@ -24,9 +24,11 @@ class RickAndMortyApp extends StatelessWidget {
             );
           case '/details':
             int characterId = settings.arguments as int;
+            int episodeId = settings.arguments as int;
             return MaterialPageRoute(
               settings: settings,
-              builder: (context) => DetailsPage(characterId: characterId),
+              builder: (context) =>
+                  DetailsPage(characterId: characterId, episodeId: episodeId),
             );
           default:
             return null;

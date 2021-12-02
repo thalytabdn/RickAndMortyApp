@@ -25,6 +25,13 @@ class DetailedCharacter {
   late final List<String> episode;
   late final String url;
   late final String created;
+  late int firstEpisode = _getFirstEpisode();
+
+  int _getFirstEpisode() {
+    var firstEpisodeUrl = Uri.parse(episode[0]);
+    var episodeId = int.parse(firstEpisodeUrl.pathSegments.last);
+    return episodeId;
+  }
 
   DetailedCharacter.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -76,6 +83,40 @@ class Origin {
     final _data = <String, dynamic>{};
     _data['name'] = name;
     _data['url'] = url;
+    return _data;
+  }
+}
+
+class DetailedEpisode {
+  DetailedEpisode({
+    required this.id,
+    required this.name,
+    required this.air_date,
+    required this.episode,
+    required this.characters,
+  });
+
+  late final int id;
+  late final String name;
+  late final String air_date;
+  late final String episode;
+  late final List<String> characters;
+
+  DetailedEpisode.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
+    name = json['name'];
+    air_date = json['air_date'];
+    episode = json['episode'];
+    characters = json['characters'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final _data = <String, dynamic>{};
+    _data['id'] = id;
+    _data['name'] = name;
+    _data['air_date'] = air_date;
+    _data['episode'] = episode;
+    _data['characters'] = characters;
     return _data;
   }
 }

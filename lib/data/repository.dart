@@ -18,4 +18,9 @@ abstract class Repository {
     var response = await _dio.get("/character/$characterId");
     return DetailedCharacter.fromJson(response.data);
   }
+
+  static Future<DetailedEpisode> getEpisodeDetails(int episodeId) async {
+    var response = await _dio.get("/episode/$episodeId");
+    return DetailedEpisode.fromJson(response.data);
+  }
 }
