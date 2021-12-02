@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/thalyta/git/Treinamento-Flutter/kode_rick_and_morty/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/thalyta/git/RickAndMortyApp/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/thalyta/git/Treinamento-Flutter/kode_rick_and_morty/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/thalyta/git/RickAndMortyApp/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
