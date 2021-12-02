@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/kode_rick_and_morty/BuildConfig.java
+ com.example.kode_rick_and_morty.BuildConfig
